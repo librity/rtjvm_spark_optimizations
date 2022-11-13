@@ -29,14 +29,22 @@ Install IntelliJ IDEA with the Scala plugin.
 ### Docker
 
 Install Docker:
-
+    
 - https://docs.docker.com/desktop/install/ubuntu/
 - https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
-Start all required containers:
+Build images:
 
 ```bash
-$ docker compose up
+$ cd spark-cluster
+$ chmod +x build-images.sh
+$ ./build-images.sh
+```
+
+Start dockerized Spark cluster:
+
+```bash
+$ docker-compose up --scale spark-worker=3
 ```
 
 Access each container:
@@ -46,10 +54,4 @@ Access each container:
 $ docker ps
 # Get a shell in any container
 $ docker exec -it CONTAINER_NAME bash
-```
-
-To reset docker container state, purge them with:
-
-```bash
-$ ./docker-clean.sh
 ```
