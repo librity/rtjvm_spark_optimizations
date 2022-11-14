@@ -44,7 +44,7 @@ $ ./build-images.sh
 Start dockerized Spark cluster:
 
 ```bash
-$ docker-compose up --scale spark-worker=3
+$ docker compose up --scale spark-worker=3
 ```
 
 Access each container:
