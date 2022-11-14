@@ -10,7 +10,7 @@ object SparkJobAnatomy {
     * Boilerplate
     */
   val spark = SparkSession.builder()
-    .appName("Lesson 2.1 - Spark Job Anatomy")
+    .appName("Lesson 2.3 - Spark Job Anatomy")
     .master("local[*]")
     .getOrCreate()
 

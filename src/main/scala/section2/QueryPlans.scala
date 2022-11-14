@@ -7,7 +7,7 @@ object QueryPlans {
     * Boilerplate
     */
   val spark = SparkSession.builder()
-    .appName("Lesson 2.1 - Query Plans")
+    .appName("Lesson 2.2 - Query Plans")
     .master("local[*]")
     .getOrCreate()
 
