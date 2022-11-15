@@ -103,5 +103,13 @@ object SparkAPIsComparison {
     dsCount.explain()
     timesFiveDSCount.explain()
 
+
+    /**
+      * Conclusions:
+      *
+      * - Once you decide on an API level, stay there
+      * - Use Data Frames most of the time (Spark optimizes many things for you)
+      * - Lambdas wreck Dataset performance
+      */
   }
 }

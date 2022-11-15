@@ -230,3 +230,7 @@ spark-warehouse/
 
 # Daniel added
 src/main/resources/generated/
+
+# My Ignores
+spark-cluster/apps/*
+spark-cluster/data/*
