@@ -84,6 +84,10 @@ object BroadcastJoins {
   joinedNumbers.explain()
   joinedNumbersV2.explain()
 
+  /**
+    * We should only Broadcast SMALL Data Frames!!
+    */
+
   def main(args: Array[String]): Unit = {
     /**
       * Keep the program running so we can analyze the webview
