@@ -76,7 +76,11 @@ object JoinsRecap {
     * - Basically the cartesian product
     * - Everything in the left table with everything in the right
     */
-  val guitaristBandsCross = guitarists.join(bands, joinCondition, "cross")
+  val guitaristBandsCross = guitarists.join(
+    bands,
+    guitarists.col("band") === guitarists.col("band"),
+    "cross"
+  )
 
 
   /**
@@ -135,10 +139,10 @@ object JoinsRecap {
     //
     //        inspect(guitaristBandsSemi)
     //        inspect(guitaristBandsAnti)
-    //    inspect(guitaristBandsCross)
+    inspect(guitaristBandsCross)
 
     //    wordsMap.foreach(println)
     //    wordsRDD.foreach(println)
-    scores.foreach(println)
+    //    scores.foreach(println)
   }
 }
