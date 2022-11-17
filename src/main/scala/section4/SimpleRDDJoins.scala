@@ -21,12 +21,11 @@ object SimpleRDDJoins {
   val sc = spark.sparkContext
   sc.setLogLevel("WARN")
 
-  val examDataDir = "src/main/resources/generated/exam_data"
-
 
   /**
     * Generate Exam Data (do once)
     */
+  val examDataDir = "src/main/resources/generated/exam_data"
   // generateExamData(examDataDir, 1000000, 5)
 
 
