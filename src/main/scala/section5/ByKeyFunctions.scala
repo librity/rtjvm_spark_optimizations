@@ -10,7 +10,7 @@ object ByKeyFunctions {
     * Boilerplate
     */
   val spark = SparkSession.builder()
-    .appName("Lesson 5.2 - .byKey() Functions")
+    .appName("Lesson 5.2 - .ByKey() Functions")
     .master("local[*]")
     .getOrCreate()
 
