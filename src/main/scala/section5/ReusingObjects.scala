@@ -164,6 +164,7 @@ object ReusingObjects {
     *
     * - Even lighter than Mutable Case Classes
     * - Took 5 seconds with a 46.0 KiB Shuffle
+    * - Performance scales with Data Set size
     * - When we call .maxBy() and .count() on words it converts it to an indexed Seq (BAD)
     * - Need to make code serializable across the cluster with SerializableTextStats
     */
